@@ -1,0 +1,227 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+.header {
+    width: 100%; /* ширина буде у всю ширину батьківського елементу */
+    max-width: 1180px; /* максимальна ширина */
+    margin: 0 auto; /* для розміщення по центру */
+    margin-top: 30px;
+    display: flex; /* буде контейнером для всіх елементів шапки */
+    justify-content: space-between; /* рівномірно розподіляє всі елементи по ширині flex-блоку. Перший елемент спочатку, останній в кінці(дивимось підказку по flexbox з лекції)*/
+    align-items: center; /* вирівнюємо елементу за центром */
+    box-sizing: border-box; /* ширина border не додається в ширину елементу */
+}
+.nav {
+    display: flex;
+    list-style-type: none; /* прибираємо вигляд списку за замовчування */
+    justify-content: flex-start;
+    font-size: 14px;
+    align-items: center;
+}
+
+.nav>li{
+    margin-left: 15px; /* всім дочірнім елементам класу nav відступ праворуч 15px*/
+}
+
+.nav>li>a{
+    text-decoration: none;
+    color: #202020;
+    font-weight: 700;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.logo span {
+    font-size: 24px;
+    color: #202020;
+    font-weight: 700;
+}
+.nav .button {
+    background: #5B9AFF/*колір фону*/;
+    border-radius: 5px/*радіус*/;
+    color: #fff/*колір шрифта*/;
+    font-weight: 66.12px/**/;
+    padding: 5px 15px;
+    border: none;
+}
+
+.page-top {
+    margin-top: 125px;
+    margin-bottom: 108.5px;
+    border-top: 1px solid #C2C2C2;
+}
+.page{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.wrap{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.page{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.page h2 {
+    position: absolute;
+    font-weight: 300;
+    font-size: 14px;
+    color: #c2c2c2;
+    top: -20px; /* це значення підберіть використовуючи dev tools */
+    background: #fff;
+    padding: 0 20px;
+}
+.page .button{
+    width: 180px;
+    height: 47px;
+    background:  #5B9AFF;
+    border-radius: 10px;
+    color: #fff;
+    left: calc(50% - 116.79px/2 - 500.61px);
+    top: calc(50% - 26px/2 - 351px);
+    font-weight: normal;
+    font-size: 24px;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.page h1 {
+    font-size: 48px;
+    color: #202020;
+    font-weight: bold;
+
+}
+.page .hero-text{
+    width: 741px;
+    color: #4F4F4F;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 51px;/* висота міжрядкового інтервалу, беремо з фігми*/
+}
+
+.departments{
+    margin-top: 70.5px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 20px; /*простір між рядками*/
+}
+
+.text h3 {
+    font-size: 22px;
+    color: #000;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.text p {
+    width: 290px;
+    font-size: 14px;
+    color: #b2b2b2;
+    font-weight: normal;
+    line-height: 16px;
+}
+
+.dep-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dep-item .img{
+    flex-basis: 140px; /* базовий розмір флекс елементу */
+    text-align: center;
+}
+.dep-item .text{
+    flex-basis: calc(100% - 140px); /* розміри в css можна обчислювати за допомоги функцій calc*/
+}
+
+.page-bottom {
+    margin-top: 115px;
+    border-top: 1px solid #C2C2C2;
+}
+
+.wrap{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+.professor{
+    margin-top: 70.5px;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 50px; /*простір між рядками*/
+}
+
+.text h5 {
+    margin-left: 33px;
+    font-size: 22px;
+    color: #000;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.text p {
+    margin-left: 33px;
+    width: 200px;
+    font-size: 14px;
+    color: #b2b2b2;
+    font-weight: normal;
+    line-height: 16px;
+}
+
+.prof-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.prof-item .img{
+    flex-basis: 100px; /* базовий розмір флекс елементу */
+    text-align: center;
+    weight: 100px;
+    height: 100px;
+}
+.prof-item .text{
+    flex-basis: calc(100% - 140px); /* розміри в css можна обчислювати за допомоги функцій calc*/
+}
+footer{
+    background-color: #F7F7F7;
+}
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social{
+    display: flex;
+    list-style-type: none;
+}
+.social li{
+    margin-right: 20px;
+}
+.social a{
+    text-decoration: none;
+    color: #B2B2B2;
+    font-size: 24px;
+}
+
